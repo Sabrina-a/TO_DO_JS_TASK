@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container-fluid pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="parent col-md-4">
+            <nav class="btn-pluss-wrapper">
+              <h2 class="tooltip">Look!</h2>
+              <div href="#" class="btn-pluss">
+                <ul>
+                  <li><a href="#about">Star Tasks</a></li>
+                  <li><a href="#blog">Create New</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-8">
+            <nav>
+              <ul class="nav d-flex justify-content-evenly cursor">
+                <li class="nav-item active btn" role="button" data-filter="all">
+                  All
+                </li>
+                <li class="nav-item btn" role="button" data-filter="work">
+                  Work
+                </li>
+                <li class="nav-item btn" role="button" data-filter="personal">
+                  Personal
+                </li>
+                <li class="nav-item btn" role="button" data-filter="wishlist">
+                  Wishlist
+                </li>
+                <li class="nav-item btn" role="button" data-filter="birthday">
+                  Birthday
+                </li>
+              </ul>
+            </nav>
+            <section class="py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6" id="filterable-element">
+                    <div class="object py-3 work">obj1</div>
+                    <div class="object py-3 work">obj2</div>
+                    <div class="object py-3 personal">obj3</div>
+                    <div class="object py-3 wishlist">obj4</div>
+                    <div class="object py-3 birthday">obj5</div>
+                    <div class="object py-3">obj6</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div id="open" class="add-btn">+</div>
+      </div>
+    </section>
+
+    <!-- modal  -->
+    <div class="modall-container" id="modall">
+      <div class="modalll">
+        <div class="modall-header">
+          <div class="modall-content">
+            <form action="" class="modall-form">
+              <div>
+                <input
+                  type="text"
+                  id="user-data"
+                  placeholder="Input new task here "
+                  class="form-input"
+                />
+              </div>
+
+              <input
+                type="submit"
+                value="Add"
+                id="add-data"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
