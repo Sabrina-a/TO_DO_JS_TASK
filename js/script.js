@@ -10,7 +10,7 @@ const objects = document.querySelectorAll(".object");
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", (e) => {
     e.preventDefault;
-    const filter = e.target.dataset.filter;
+    filter = e.target.dataset.filter;
     console.log(filter);
 
     objects.forEach((obj) => {
@@ -25,15 +25,15 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-function addData() {
+function addData(e) {
   event.preventDefault();
   let box = "";
-  box += `<div class="object py-3 work">${user_data.value}</div>`;
+  box += `<div class="object py-3 ${filter}">${user_data.value}</div>`;
   console.log(user_data.value);
   filterable_element.innerHTML += box;
   console.log("DSAF");
+  console.log(e.target);
 }
-
 
 //show modall
 open.addEventListener("click", () => modall.classList.add("show-modall"));
