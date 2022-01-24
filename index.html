@@ -12,6 +12,22 @@
     <section class="container-fluid pt-5">
       <div class="container">
         <div class="row">
+          <div class="col-md-5 m-auto pb-4">
+            <form class="d-flex">
+              <input
+                id="search"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
           <div class="parent col-md-4">
             <nav class="btn-pluss-wrapper">
               <h2 class="tooltip">Look!</h2>
@@ -48,14 +64,21 @@
             <section class="py-5">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6" id="filterable-element">
-                    <div class="object py-3 work">obj1</div>
-                    <div class="object py-3 work">obj2</div>
-                    <div class="object py-3 personal">obj3</div>
-                    <div class="object py-3 wishlist">obj4</div>
-                    <div class="object py-3 birthday">obj5</div>
-                    <div class="object py-3">obj6</div>
-                  </div>
+                
+                  <table id="table" class="table table-borderless col-md">
+                    <!-- <thead>
+                      <tr>
+                      
+                        <th scope="col">Your task</th>
+                        <th scope="col">Star</th>
+                        <th scope="col">cancel</th>
+                      </tr>
+                    </thead> -->
+                    <tbody id="filterable-element" >
+                     
+                        <!-- <th scope="row">1</th> -->
+                      </tbody>  
+                     
                 </div>
               </div>
             </section>
@@ -75,7 +98,7 @@
                 <input
                   type="text"
                   id="user-data"
-                  placeholder="Input new task here "
+                  placeholder="Input new task here"
                   class="form-input"
                 />
               </div>
@@ -92,7 +115,11 @@
       </div>
     </div>
 
+    
+
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js"></script>
+    <script src="js/filterNav.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
